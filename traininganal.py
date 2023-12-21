@@ -7,7 +7,7 @@ import plotly
 import numpy as np
 import plotly.graph_objects as go
 from cipy.optimize import curve_fit
-import scipy
+import SciPy
 
 
 # This first model is a relatively simple multiple linear regression model that should predict event time based on time in zones
