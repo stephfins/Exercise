@@ -286,6 +286,12 @@ def get_input_data_from_TrainingPeaks(file, block_length_days):
 
     return input_data
 
+def train_model(X, y):
+    model = LinearRegression().fit(X, y)
+    print("Model Coefficients:", model.coef_)
+    print("Model Intercept:", model.intercept_)
+    return model
+
 def main():
     # Input Data for the model - will look for a workouts.csv file from Training Peaks.
     # If not found, resorts to your manual entry of TIZ by block
